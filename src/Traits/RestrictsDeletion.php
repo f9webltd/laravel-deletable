@@ -13,7 +13,7 @@ use function trans;
 
 trait RestrictsDeletion
 {
-    /** @var null|string|\Illuminate\Contracts\Translation\Translator */
+    /** @var null|string|\Illuminate\Contracts\Translation\Translator|array */
     protected $notDeletableMessage = null;
 
     /**
