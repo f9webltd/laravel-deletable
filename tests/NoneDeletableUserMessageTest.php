@@ -66,7 +66,7 @@ class NoneDeletableUserMessageTest extends TestCase
         $user = $model::query()->create($record = ['email' => 'rob@f9web.co.uk']);
 
         $this->expectExceptionMessage(
-            "[{$class} #{$user->getKey()}] is a core record and therefore not deletable. This indicates ".
+            "[{$class} #{$user->getKey()}] is a core record and therefore not deletable. This indicates " .
             "the record is used programmatically within the system."
         );
 
