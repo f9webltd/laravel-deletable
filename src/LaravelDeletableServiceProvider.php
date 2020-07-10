@@ -15,18 +15,18 @@ class LaravelDeletableServiceProvider extends ServiceProvider
     {
         $this->publishes(
             [
-                __DIR__.'/../config/f9web-laravel-deletable.php' => config_path('f9web-laravel-deletable.php'),
+                __DIR__ . '/../config/f9web-laravel-deletable.php' => config_path('f9web-laravel-deletable.php'),
             ],
             'config'
         );
 
-        $this->mergeConfigFrom(__DIR__.'/../config/f9web-laravel-deletable.php', 'f9web-laravel-deletable');
+        $this->mergeConfigFrom(__DIR__ . '/../config/f9web-laravel-deletable.php', 'f9web-laravel-deletable');
 
-        $this->loadTranslationsFrom(__DIR__.'/../resources/lang/', 'f9web-laravel-deletable');
+        $this->loadTranslationsFrom(__DIR__ . '/../resources/lang/', 'f9web-laravel-deletable');
 
         $this->publishes(
             [
-                __DIR__.'/../resources/lang' => resource_path('lang/vendor/f9web-laravel-deletable'),
+                __DIR__ . '/../resources/lang' => resource_path('lang/vendor/f9web-laravel-deletable'),
             ]
         );
     }
