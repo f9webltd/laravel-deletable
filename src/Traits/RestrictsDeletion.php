@@ -13,7 +13,7 @@ use function trans;
 
 trait RestrictsDeletion
 {
-    /** @var null|string */
+    /** @var null|string|\Illuminate\Contracts\Translation\Translator */
     protected $notDeletableMessage = null;
 
     /**
@@ -95,4 +95,11 @@ trait RestrictsDeletion
 
         return false;
     }
+
+    /**
+     * Get the value of the model's primary key.
+     *
+     * @return mixed
+     */
+    abstract public function getKey();
 }
