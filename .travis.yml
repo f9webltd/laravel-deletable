@@ -1,0 +1,18 @@
+language: php
+
+php:
+    - 7.2
+    - 7.3
+    - 7.4
+
+env:
+    matrix:
+        - Laravel=7.x
+        - Laravel=6.x
+        - Laravel=5.8.x
+
+install:
+    - travis_retry composer require --dev "laravel/framework:${Laravel}" --no-interaction
+
+script:
+    - vendor/bin/phpunit

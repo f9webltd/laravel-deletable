@@ -1,0 +1,56 @@
+{
+    "name": "f9webltd/laravel-deletable",
+    "description": "Gracefully restrict deletion of Laravel Eloquent models",
+    "keywords": [
+        "laravel",
+        "laravel eloquent",
+        "eloquent",
+        "soft deletes"
+    ],
+    "homepage": "https://github.com/f9webltd/laravel-deletable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rob Allport",
+            "email": "rob@f9web.co.uk",
+            "homepage": "https://www.f9web.co.uk",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "illuminate/config": "5.8.* || ^6.0 || ^7.0",
+        "illuminate/container": "5.8.* || ^6.0 || ^7.0",
+        "illuminate/contracts": "5.8.* || ^6.0 || ^7.0",
+        "illuminate/database": "5.8.* || ^6.0 || ^7.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": ">=3.8",
+        "phpunit/phpunit": "^7.0|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "F9Web\\LaravelDeletable\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "F9Web\\LaravelDeletable\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "F9Web\\LaravelDeletable\\LaravelDeletableServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
