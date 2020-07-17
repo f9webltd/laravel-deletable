@@ -59,7 +59,7 @@ class User extends Model
   
   public function isDeletable() : bool
   {
-    return $this->orders->isEmpty();
+    return $this->orders()->doesntExist();
   }  
 }
 ```
