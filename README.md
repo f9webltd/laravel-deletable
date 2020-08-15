@@ -7,7 +7,7 @@
 
 # Laravel Deletable
 
-Gracefully handle deletion restrictions on your [Eloquent models](https://laravel.com/docs/7.x/eloquent).
+Gracefully handle deletion restrictions on your [Eloquent models](https://laravel.com/docs/7.x/eloquent), as featured on [Laravel News](https://laravel-news.com/laravel-deletable-trait)
 
 ## Requirements
 
