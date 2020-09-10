@@ -11,6 +11,11 @@ env:
         - Laravel=7.x
         - Laravel=6.x
         - Laravel=5.8.x
+        
+matrix:
+  exclude:
+    # Unsupported combinations
+    - { env: Laravel=8.x, php: 7.2 }       
 
 install:
     - travis_retry composer require --dev "laravel/framework:${Laravel}" --no-interaction
