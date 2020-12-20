@@ -5,6 +5,8 @@
 [![StyleCI Status](https://github.styleci.io/repos/278581318/shield)](https://github.styleci.io/repos/278581318)
 [![Packagist License](https://img.shields.io/packagist/l/f9webltd/laravel-deletable?style=flat-square)](https://packagist.org/packages/f9webltd/laravel-deletable)
 
+![](https://banners.beyondco.de/Laravel%20Deletable.png?theme=light&packageManager=composer+require&packageName=f9webltd%2Flaravel-deletable&pattern=architect&style=style_1&description=Gracefully+restrict+deletion+of+Laravel+Eloquent+models&md=1&showWatermark=0&fontSize=100px&images=trash)
+
 # Laravel Deletable
 
 Gracefully handle deletion restrictions on your [Eloquent models](https://laravel.com/docs/7.x/eloquent), as featured on [Laravel News](https://laravel-news.com/laravel-deletable-trait)
@@ -12,6 +14,8 @@ Gracefully handle deletion restrictions on your [Eloquent models](https://larave
 ## Requirements
 
 PHP >= 7.2, Laravel >= 5.8.
+
+PHP 8.0 is supported for Laravel >= 6x 
 
 ## Installation
 
