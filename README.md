@@ -2,7 +2,6 @@
 
 [![Packagist Version](https://img.shields.io/packagist/v/f9webltd/laravel-deletable?style=flat-square)](https://packagist.org/packages/f9webltd/laravel-deletable)
 [![run-tests-laravel-8](https://img.shields.io/github/workflow/status/f9webltd/laravel-deletable/run-tests-laravel-8?style=flat-square)](https://github.com/f9webltd/laravel-deletable/actions)
-![Travis (.org)](https://img.shields.io/travis/f9webltd/laravel-deletable?style=flat-square)
 [![StyleCI Status](https://github.styleci.io/repos/278581318/shield)](https://github.styleci.io/repos/278581318)
 [![Packagist License](https://img.shields.io/packagist/l/f9webltd/laravel-deletable?style=flat-square)](https://packagist.org/packages/f9webltd/laravel-deletable)
 
