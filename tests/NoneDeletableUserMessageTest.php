@@ -20,7 +20,7 @@ class NoneDeletableUserMessageTest extends TestCase
      */
     public function it_sets_custom_exception_messages()
     {
-        $model = (new class() extends User {
+        $model = (new class () extends User {
             public function isDeletable(): bool
             {
                 if ($this->email === 'rob@f9web.co.uk') {
@@ -48,7 +48,7 @@ class NoneDeletableUserMessageTest extends TestCase
     {
         $this->expectException(NoneDeletableModel::class);
 
-        $model = (new class() extends User {
+        $model = (new class () extends User {
             public function isDeletable(): bool
             {
                 // the user with the email 'rob@f9web.co.uk' is a
