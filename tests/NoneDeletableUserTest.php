@@ -53,7 +53,7 @@ class NoneDeletableUserTest extends TestCase
     private function getModel()
     {
         // the user with the email 'rob@f9web.co.uk' is not deletable
-        return (new class() extends User {
+        return (new class () extends User {
             public function isDeletable(): bool
             {
                 return $this->email !== 'rob@f9web.co.uk';
