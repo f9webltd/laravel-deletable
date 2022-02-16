@@ -1,4 +1,4 @@
-name: run-tests-laravel-8
+name: run-tests-laravel-8-9
 
 on: [push, pull_request]
 
