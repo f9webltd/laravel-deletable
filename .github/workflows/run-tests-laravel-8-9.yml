@@ -1,38 +1,49 @@
 name: run-tests-laravel-8-9
 
-on: [push, pull_request]
+on:
+  - push
+  - pull_request
 
 jobs:
   tests:
     runs-on: ${{ matrix.os }}
+
     strategy:
       fail-fast: false
       matrix:
         os: [ubuntu-latest]
-        php: [8.0, 7.4, 8.1]
-        laravel: [8.*, 9.*, 10.*]
+        php: [7.4, 8.0, 8.1, '8.2']
+        laravel: ['8.*', '9.*', '10.*', '11.*']
         dependency-version: [prefer-stable]
         include:
-          -   laravel: 10.*
-              testbench: 8.*
-          -   laravel: 8.*
-              testbench: 6.*
-          -   laravel: 9.*
-              testbench: 7.*
+          - laravel: 10.*
+            testbench: 8.*
+          - laravel: 8.*
+            testbench: 6.*
+          - laravel: 9.*
+            testbench: 7.*
+          - laravel: 11.*
+            testbench: 9.*
         exclude:
-         - laravel: 9.*
-           php: 7.4  
-         - laravel: 10.*
-           php: 8.0
-         - laravel: 10.*
-           php: 7.4   
+          - laravel: 9.*
+            php: 7.4
+          - laravel: 10.*
+            php: 8.0
+          - laravel: 10.*
+            php: 7.4
+          - laravel: 11.*
+            php: 7.4
+          - laravel: 11.*
+            php: 8.0
+          - laravel: 11.*
+            php: 8.1
 
     name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.dependency-version }}
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        
+
       - name: Cache dependencies
         uses: actions/cache@v2
         with:
@@ -50,5 +61,6 @@ jobs:
         run: |
           composer require "laravel/framework:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" --no-interaction --no-update
           composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction
+
       - name: Execute tests
         run: vendor/bin/phpunit --color=always tests
