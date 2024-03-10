@@ -27,8 +27,8 @@
         "illuminate/database": "^10.0|^11.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^9.0",
-        "phpunit/phpunit": "^10.1"
+        "orchestra/testbench": "^8.0|^9.0",
+        "phpunit/phpunit": "^9.4|^10.1"
     },
     "autoload": {
         "psr-4": {
