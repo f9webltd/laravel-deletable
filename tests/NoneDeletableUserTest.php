@@ -8,14 +8,10 @@ use F9Web\LaravelDeletable\Exceptions\NoneDeletableModel;
 use F9Web\LaravelDeletable\Tests\Models\NoneDeletableUser;
 use F9Web\LaravelDeletable\Tests\Models\User;
 
-// use Illuminate\Foundation\Testing\RefreshDatabase;
-
 use function get_class;
 
 class NoneDeletableUserTest extends TestCase
 {
-    // use RefreshDatabase;
-
     /**
      * @test
      * @throws \Exception
