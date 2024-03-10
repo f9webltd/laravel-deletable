@@ -12,7 +12,8 @@ Gracefully handle deletion restrictions on your [Eloquent models](https://larave
 
 ## Requirements
 
-PHP `^8.2`, Laravel `^10.0`.
+* PHP `^8.2`
+* Laravel `^10.0` / `^11.0`.
 
 For older versions of PHP / Laravel use version [1.0.6](https://github.com/f9webltd/laravel-deletable/tree/1.0.6)
 
