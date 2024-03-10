@@ -6,14 +6,11 @@ namespace F9Web\LaravelDeletable\Tests;
 
 use F9Web\LaravelDeletable\Exceptions\NoneDeletableModel;
 use F9Web\LaravelDeletable\Tests\Models\User;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 
 use function get_class;
 
 class NoneDeletableUserMessageTest extends TestCase
 {
-    use RefreshDatabase;
-
     /**
      * @test
      * @throws \Exception
@@ -53,7 +50,7 @@ class NoneDeletableUserMessageTest extends TestCase
             {
                 // the user with the email 'rob@f9web.co.uk' is a
                 // core record and therefore not deletable
-                if ($this->email === 'rob@f9web.co.uk') {
+                if ($this->email === 'rob1@f9web.co.uk') {
                     return $this->isCoreEntity();
                 }
 
@@ -63,7 +60,7 @@ class NoneDeletableUserMessageTest extends TestCase
 
         $class = get_class($model);
 
-        $user = $model::query()->create($record = ['email' => 'rob@f9web.co.uk']);
+        $user = $model::query()->create($record = ['email' => 'rob1@f9web.co.uk']);
 
         $this->expectExceptionMessage(
             "[{$class} #{$user->getKey()}] is a core record and therefore not deletable. This indicates " .
