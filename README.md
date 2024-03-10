@@ -4,6 +4,7 @@
 [![run-tests-laravel-8](https://img.shields.io/github/workflow/status/f9webltd/laravel-deletable/run-tests-laravel-8?style=flat-square)](https://github.com/f9webltd/laravel-deletable/actions)
 [![StyleCI Status](https://github.styleci.io/repos/278581318/shield)](https://github.styleci.io/repos/278581318)
 [![Packagist License](https://img.shields.io/packagist/l/f9webltd/laravel-deletable?style=flat-square)](https://packagist.org/packages/f9webltd/laravel-deletable)
+[![PHP ^8.2](https://img.shields.io/badge/php-%5E8.2-brightgreen)]()
 
 # Laravel Deletable
 
@@ -11,9 +12,9 @@ Gracefully handle deletion restrictions on your [Eloquent models](https://larave
 
 ## Requirements
 
-PHP >= 7.2, Laravel >= 5.8.
+PHP `^8.2`, Laravel `^10.0`.
 
-PHP 8.0 is supported for Laravel >= 6x 
+For older versions of PHP / Laravel use version [1.0.6](https://github.com/f9webltd/laravel-deletable/tree/1.0.6)
 
 ## Installation
 
