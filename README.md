@@ -1,8 +1,7 @@
 ![](https://banners.beyondco.de/Laravel%20Deletable.png?theme=light&packageManager=composer+require&packageName=f9webltd%2Flaravel-deletable&pattern=architect&style=style_1&description=Gracefully+restrict+deletion+of+Laravel+Eloquent+models&md=1&showWatermark=0&fontSize=100px&images=trash)
 
 [![Packagist Version](https://img.shields.io/packagist/v/f9webltd/laravel-deletable?style=flat-square)](https://packagist.org/packages/f9webltd/laravel-deletable)
-[![run-tests-laravel-8](https://img.shields.io/github/workflow/status/f9webltd/laravel-deletable/run-tests-laravel-8?style=flat-square)](https://github.com/f9webltd/laravel-deletable/actions)
-[![StyleCI Status](https://github.styleci.io/repos/278581318/shield)](https://github.styleci.io/repos/278581318)
+[![run-tests](https://github.com/f9webltd/laravel-deletable/actions/workflows/run-tests.yml/badge.svg)](https://github.com/f9webltd/laravel-deletable/actions/workflows/run-tests.yml)[![StyleCI Status](https://github.styleci.io/repos/278581318/shield)](https://github.styleci.io/repos/278581318)
 [![Packagist License](https://img.shields.io/packagist/l/f9webltd/laravel-deletable?style=flat-square)](https://packagist.org/packages/f9webltd/laravel-deletable)
 [![PHP ^8.2](https://img.shields.io/badge/php-%5E8.2-brightgreen)]()
 
@@ -13,7 +12,7 @@ Gracefully handle deletion restrictions on your [Eloquent models](https://larave
 ## Requirements
 
 * PHP `^8.2`
-* Laravel `^10.0` / `^11.0`.
+* Laravel `^10.0` / `^11.0` / `^12.0`.
 
 For older versions of PHP / Laravel use version [1.0.6](https://github.com/f9webltd/laravel-deletable/tree/1.0.6)
 
