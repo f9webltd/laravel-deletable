@@ -1,6 +1,7 @@
 ![](https://banners.beyondco.de/Laravel%20Deletable.png?theme=light&packageManager=composer+require&packageName=f9webltd%2Flaravel-deletable&pattern=architect&style=style_1&description=Gracefully+restrict+deletion+of+Laravel+Eloquent+models&md=1&showWatermark=0&fontSize=100px&images=trash)
 
 [![Packagist Version](https://img.shields.io/packagist/v/f9webltd/laravel-deletable?style=flat-square)](https://packagist.org/packages/f9webltd/laravel-deletable)
+[![Total Downloads](https://poser.pugx.org/f9webltd/laravel-deletable/downloads.png)](https://packagist.org/packages/f9webltd/laravel-deletable)
 [![run-tests](https://github.com/f9webltd/laravel-deletable/actions/workflows/run-tests.yml/badge.svg)](https://github.com/f9webltd/laravel-deletable/actions/workflows/run-tests.yml)[![StyleCI Status](https://github.styleci.io/repos/278581318/shield)](https://github.styleci.io/repos/278581318)
 [![Packagist License](https://img.shields.io/packagist/l/f9webltd/laravel-deletable?style=flat-square)](https://packagist.org/packages/f9webltd/laravel-deletable)
 [![PHP ^8.2](https://img.shields.io/badge/php-%5E8.2-brightgreen)]()
