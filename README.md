@@ -7,14 +7,16 @@
 
 # Laravel Deletable
 
-Gracefully handle deletion restrictions on your [Eloquent models](https://laravel.com/docs/7.x/eloquent), as featured on [Laravel News](https://laravel-news.com/laravel-deletable-trait)
+Gracefully handle deletion restrictions on your [Eloquent models](https://laravel.com/docs/master/eloquent), as featured on [Laravel News](https://laravel-news.com/laravel-deletable-trait)
 
 ## Requirements
 
 * PHP `^8.2`
-* Laravel `^10.0` / `^11.0` / `^12.0`.
+* Laravel `^11.0` / `^12.0` / `^13.0`.
 
-For older versions of PHP / Laravel use version [1.0.6](https://github.com/f9webltd/laravel-deletable/tree/1.0.6)
+The package supports actively supported Laravel releases as per the official [Laravel Support Policy](https://laravel.com/docs/master/releases#support-policy).
+
+For legacy support (older Laravel and PHP versions) use [1.0.6](https://github.com/f9webltd/laravel-deletable/tree/1.0.6) or [2.1.0](https://github.com/f9webltd/laravel-deletable/tree/2.1.0).
 
 ## Installation
 
@@ -183,6 +185,7 @@ If you discover any security related issues, please email rob@f9web.co.uk instea
 ## Credits
 
 - [Rob Allport](https://github.com/ultrono) for [F9 Web Ltd.](https://www.f9web.co.uk)
+- [All Contributors](https://github.com/f9webltd/laravel-deletable/graphs/contributors)
 
 ## License
 
