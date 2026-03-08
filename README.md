@@ -13,7 +13,7 @@ Gracefully handle deletion restrictions on your [Eloquent models](https://larave
 ## Requirements
 
 * PHP `^8.2`
-* Laravel `^11.0` / `^12.0` / `^13.0`.
+* Laravel `^11.0` / `^12.0` / `^13.0`
 
 The package supports actively supported Laravel releases as per the official [Laravel Support Policy](https://laravel.com/docs/master/releases#support-policy).
 
