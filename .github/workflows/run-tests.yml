@@ -32,7 +32,7 @@ jobs:
       - name: Cache Composer packages
         uses: actions/cache@v4
         with:
-          path: ${{ steps.composer-cache.outputs.dir }}
+          path: ~/.composer/cache/files
           key: composer-cache-${{ runner.os }}-php-${{ matrix.php }}-L${{ matrix.laravel }}-${{ hashFiles('**/composer.lock') }}
           restore-keys: |
             composer-cache-${{ runner.os }}-php-${{ matrix.php }}-L${{ matrix.laravel }}-
