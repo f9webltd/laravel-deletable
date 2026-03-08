@@ -12,10 +12,9 @@ class DeletableUserTest extends TestCase
     use RefreshDatabase;
 
     /**
-     * @test
      * @throws \Exception
      */
-    public function it_allows_deletion()
+    public function test_it_allows_deletion()
     {
         $user = User::query()->create($record = ['email' => 'user@domain.co.uk']);
 
