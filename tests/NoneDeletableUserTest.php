@@ -13,10 +13,9 @@ use function get_class;
 class NoneDeletableUserTest extends TestCase
 {
     /**
-     * @test
      * @throws \Exception
      */
-    public function it_denies_deletion()
+    public function test_it_denies_deletion()
     {
         $this->expectException(NoneDeletableModel::class);
         $this->expectExceptionMessage('The model cannot be deleted');
@@ -28,10 +27,9 @@ class NoneDeletableUserTest extends TestCase
     }
 
     /**
-     * @test
      * @throws \Exception
      */
-    public function it_renders_the_fallback_exception_message()
+    public function test_it_renders_the_fallback_exception_message()
     {
         $this->app['config']->set(['f9web-laravel-deletable.messages.default' => null]);
 
