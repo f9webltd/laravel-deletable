@@ -12,10 +12,9 @@ use function get_class;
 class NoneDeletableUserMessageTest extends TestCase
 {
     /**
-     * @test
      * @throws \Exception
      */
-    public function it_sets_custom_exception_messages()
+    public function test_it_sets_custom_exception_messages()
     {
         $model = (new class () extends User {
             public function isDeletable(): bool
@@ -38,10 +37,9 @@ class NoneDeletableUserMessageTest extends TestCase
     }
 
     /**
-     * @test
      * @throws \Exception
      */
-    public function it_sets_a_custom_message_for_core_models()
+    public function test_it_sets_a_custom_message_for_core_models()
     {
         $this->expectException(NoneDeletableModel::class);
 
